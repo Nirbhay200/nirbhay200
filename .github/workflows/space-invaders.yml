@@ -1,0 +1,36 @@
+name: Space Invaders
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: amankumarsingh23
+          outputs: |
+            dist/space-invaders.svg?palette=github-light&color_snake=orange
+            dist/space-invaders-dark.svg?palette=github-dark&color_snake=orange
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          keep_files: true
