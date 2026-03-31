@@ -92,25 +92,6 @@ nirbhay = {
 
 ---
 
-## 🚀 Featured Projects
-
-<p align="center">
-
-<a href="https://github.com/Nirbhay200/BidVerse-A-Bidding-Website">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nirbhay200&repo=BidVerse-A-Bidding-Website&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-</a>
-
-<a href="https://github.com/Nirbhay200/ecommerce-frontend">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nirbhay200&repo=ecommerce-frontend&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-</a>
-
-<a href="https://github.com/Nirbhay200/Paradise-Nursery-Shopping-Application">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nirbhay200&repo=Paradise-Nursery-Shopping-Application&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-</a>
-
-</p>
-
----
 
 ## 🐍 Contribution Snake
 
